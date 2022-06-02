@@ -1,0 +1,4 @@
+project: PROJECT
+target: avahi_packet_consume_key_fuzzer
+cmds:
+- cmd: /out/avahi_packet_consume_key_fuzzer
