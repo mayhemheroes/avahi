@@ -19,7 +19,7 @@
 sed -i 's/check_inconsistencies=yes/check_inconsistencies=no/' common/acx_pthread.m4
 sed -i 's/avahiinclude_HEADERS =/avahiinclude_HEADERS = dns.h hashmap.h/' avahi-core/Makefile.am
 
-./autogen.sh --disable-stack-protector --disable-qt3 --disable-qt4 --disable-qt5 --disable-gtk --disable-gtk3 --disable-dbus --disable-gdbm --disable-libdaemon --disable-python --disable-manpages --disable-mono --disable-monodoc --disable-glib --disable-gobject --disable-libevent --prefix="$WORK"
+./autogen.sh --disable-stack-protector --disable-qt3 --disable-qt4 --disable-qt5 --disable-gtk --disable-gtk3 --disable-dbus --disable-gdbm --disable-libdaemon --disable-python --disable-manpages --disable-mono --disable-monodoc --disable-libsystemd --disable-glib --disable-gobject --disable-libevent --prefix="$WORK"
 make -j "$(nproc)"
 make install
 
